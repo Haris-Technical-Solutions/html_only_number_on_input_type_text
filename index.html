@@ -2,6 +2,11 @@
 function forceNumeric(haris) {
     // var haris = $(this);
     haris.val(haris.val().replace(/[^\d]+/g, ''));
+    // first char could not be zero
+    if(haris.val().match(/^0/)){
+        haris.val('');
+        return false;
+    }
 }
 </script>
 
