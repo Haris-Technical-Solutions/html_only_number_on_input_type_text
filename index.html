@@ -1,0 +1,10 @@
+<script>
+function forceNumeric(haris) {
+    // var haris = $(this);
+    haris.val(haris.val().replace(/[^\d]+/g, ''));
+}
+</script>
+
+<input type='text'  maxlength="12" minlength="12" oninput="forceNumeric($(this))" >
+
+// Jquery 3 required
